@@ -1,4 +1,4 @@
-package com.example.unitconverter.ui.theme
+package com.example.converter.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

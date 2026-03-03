@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:baselineAligned="false" >
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/display_container"
+        android:name="com.example.converter.ui.fragments.DisplayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?attr/colorControlNormal" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/numpad_container"
+        android:name="com.example.converter.ui.fragments.NumpadFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">UnitConverter</string>
+    <string name="app_name">Converter</string>
+
+    <string name="category_weight">Вес</string>
+    <string name="category_length">Длина</string>
+    <string name="category_temp">Температура</string>
+
+    <string name="unit_meter">Метр</string>
+    <string name="unit_foot">Фунт</string>
+    <string name="unit_inch">Дюйм</string>
+
+    <string name="unit_kg">Килограмм</string>
+    <string name="unit_lb">Фунт</string>
+    <string name="unit_oz">Унция</string>
+
+    <string name="unit_celsius">Цельсий</string>
+    <string name="unit_kelvin">Кельвин</string>
+    <string name="unit_fahrenheit">Фаренгейт</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
