@@ -61,8 +61,14 @@ class ConverterViewModel : ViewModel() {
     }
 
     fun onMinus() {
-        if (inputAmount[0] == '-') inputAmount = inputAmount.drop(1)
-        else inputAmount = "-$inputAmount"
+        if (selectedCategory != UnitCategory.TEMPERATURE) {
+            return
+        }
+        if (inputAmount[0] == '-') {
+            inputAmount = inputAmount.drop(1)
+        } else {
+            inputAmount = "-$inputAmount"
+        }
     }
 
     fun swapUnits() {

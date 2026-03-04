@@ -4,6 +4,9 @@
     <string name="category_weight">Вес</string>
     <string name="category_length">Длина</string>
     <string name="category_temp">Температура</string>
+    <string name="category_speed">Скорость</string>
+    <string name="category_volume">Объём</string>
+    <string name="category_area">Площадь</string>
 
     <string name="unit_meter">Метр</string>
     <string name="unit_foot">Фунт</string>
@@ -16,6 +19,23 @@
     <string name="unit_celsius">Цельсий</string>
     <string name="unit_kelvin">Кельвин</string>
     <string name="unit_fahrenheit">Фаренгейт</string>
+
+    <string name="unit_mps">м/с</string>
+    <string name="unit_kmh">км/ч</string>
+    <string name="unit_mph">миль/ч</string>
+    <string name="unit_knot">узлы</string>
+
+    <string name="unit_liter">л</string>
+    <string name="unit_ml">мл</string>
+    <string name="unit_cubic_meter">м³</string>
+    <string name="unit_gallon_us">галлон (США)</string>
+    <string name="unit_gallon_uk">галлон (Великобр.)</string>
+
+    <string name="unit_sq_meter">м²</string>
+    <string name="unit_sq_km">км²</string>
+    <string name="unit_hectare">га</string>
+    <string name="unit_acre">акр</string>
+    <string name="unit_sq_foot">фут²</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

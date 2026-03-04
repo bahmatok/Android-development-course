@@ -21,19 +21,19 @@ fun PremiumTools(viewModel: ConverterViewModel) {
             onClick = { viewModel.swapUnits() },
             modifier = Modifier.weight(1f)
         ) {
-            Text("⇅ Swap")
+            Text("⇅")
         }
 
         OutlinedButton(
             onClick = { clipboardManager.setText(AnnotatedString(viewModel.inputAmount)) }
         ) {
-            Text("Copy In")
+            Text("Copy ↑")
         }
 
         OutlinedButton(
             onClick = { clipboardManager.setText(AnnotatedString(viewModel.outputAmount)) }
         ) {
-            Text("Copy Out")
+            Text("Copy ↓")
         }
     }
 }

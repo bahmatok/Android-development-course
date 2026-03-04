@@ -49,7 +49,7 @@ fun NumpadScreen(viewModel: ConverterViewModel) {
                 modifier = Modifier.weight(1f).fillMaxHeight().padding(4.dp),
                 shape = RoundedCornerShape(8.dp)
             ) {
-                Text(text = "<=", style = MaterialTheme.typography.headlineMedium)
+                Text(text = "⌫", style = MaterialTheme.typography.headlineMedium)
             }
             Button(
                 onClick = {
