@@ -1,5 +1,6 @@
 package com.example.converter.viewmodel
 
+import android.util.Log
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
@@ -7,6 +8,8 @@ import androidx.lifecycle.ViewModel
 import com.example.converter.data.ConversionUnit
 import com.example.converter.data.ConverterService
 import com.example.converter.data.UnitCategory
+import java.text.DecimalFormat
+import java.util.Locale
 
 class ConverterViewModel : ViewModel() {
     private val converter = ConverterService()
@@ -25,7 +28,7 @@ class ConverterViewModel : ViewModel() {
         get() {
             val amount = inputAmount.toDoubleOrNull() ?: 0.0
             val result = converter.convert(amount, unitFrom, unitTo)
-            return "%.4f".format(result)
+            return "%.4f".format(Locale.US, result)
         }
 
 
@@ -72,10 +75,12 @@ class ConverterViewModel : ViewModel() {
     }
 
     fun swapUnits() {
-        val unitTemp = unitFrom
-        val valTemp = outputAmount
+        val amount = inputAmount.toDoubleOrNull() ?: 0.0
+        val convertedAmount = converter.convert(amount, unitFrom, unitTo)
+        val tempUnitFrom = unitFrom
         unitFrom = unitTo
-        unitTo = unitTemp
-        inputAmount = valTemp
+        unitTo = tempUnitFrom
+        inputAmount = "%.10f".format(Locale.US, convertedAmount).trimEnd('0').trimEnd('.')
+        if (inputAmount.isEmpty()) inputAmount = "0"
     }
 }
