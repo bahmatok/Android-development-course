@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Workout Timer</string>
+    <string name="my_trainings">Мои тренировки</string>
+    <string name="settings">Настройки</string>
+    <string name="new_timer">Новый таймер</string>
+    <string name="edit_timer">Изменить таймер</string>
+    <string name="save">Сохранить</string>
+    <string name="delete_title">Удалить тренировку?</string>
+    <string name="delete_message">Вы уверены, что хотите удалить \\\"%1$s\\\"? Это действие не может быть отменено.</string>
+    <string name="delete_phase_title">Удалить фазу</string>
+    <string name="delete_phase_msg">Удалить эту фазу?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="cancel">Отменить</string>
+    <string name="timer_name_hint">Название тренировки</string>
+    <string name="phases_label">Фазы тренировки</string>
+    <string name="color_label">Цвет тренировки</string>
+    <string name="phases_count">Фазы: %1$d</string>
+    <string name="empty_list">Список пустой. Нажмите + для создания таймера.</string>
+    <string name="error_empty_name">Введите название тренировки</string>
+    <string name="error_no_phases">Добавьте хотя бы одно фазу</string>
+    <string name="limit_warning">Максимальная длительность 24 часа</string>
+    <string name="workout">Тренировка</string>
+    <string name="back">Назад</string>
+    <string name="delete">Удалить</string>
+    <string name="language">Язык</string>
+    <string name="appearance">Внешний вид</string>
+    <string name="dark_theme">Тёмная тема</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_english">Английский</string>
+    <string name="close_timer">Закрыть таймер</string>
+    <string name="workout_finished">Тренировка завершена!</string>
+    <string name="done">Готово</string>
+    <string name="phase_progress">Фаза %1$d %2$d</string>
+    <string name="loading">Загрузка...</string>
+    <string name="play_pause">Играть / Пауза</string>
+    <string name="next_phase">Следующая</string>
+    <string name="upcoming_phases">Оставшиеся фазы</string>
+    <string name="last_phase">Это последняя фаза</string>
+    <string name="font_size_label">Размер шрифта: %1$d%%</string>
+    <string name="data_section">Данные</string>
+    <string name="clear_all_data">Очистить все данные</string>
+    <string name="confirm_clear_title">Вы уверены?</string>
+    <string name="confirm_clear_msg">Все сохраненные таймеры и настройки будут удалены безвозвратно.</string>
+</resources>
