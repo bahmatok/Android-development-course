@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="(" android:tag="(" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text=")" android:tag=")" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="√" android:tag="SQRT" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="x²" android:tag="POW2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="x^y" android:tag="^" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="x!" android:tag="!" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="π" android:tag="CONST_PI" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="e" android:tag="CONST_E" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="sin" android:tag="FUNC_SIN" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="cos" android:tag="FUNC_COS" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="tan" android:tag="FUNC_TAN" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="ln" android:tag="FUNC_LN" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="log" android:tag="FUNC_LOG" />
+        <com.google.android.material.button.MaterialButton style="@style/CalcKeyFunction" android:text="exp" android:tag="FUNC_EXP" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

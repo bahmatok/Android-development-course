@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="mode_engineering">Engineering</string>
+    <string name="mode_basic">Basic</string>
+    <string name="mode_demo">Demo mode</string>
+    <string name="mode_engineering_locked">Engineering (landscape)</string>
+    <string name="error">Error</string>
+</resources>

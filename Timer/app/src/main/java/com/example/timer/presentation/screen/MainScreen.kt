@@ -31,7 +31,6 @@ fun MainScreen(
     onNavigateToSettings: () -> Unit,
 ) {
     val sequences by viewModel.sequences.collectAsState()
-    val isLoading by viewModel.isLoading.collectAsState()
     var sequenceToDelete by remember { mutableStateOf<TimerSequence?>(null) }
 
     if (sequenceToDelete != null) {
@@ -89,10 +88,6 @@ fun MainScreen(
             contentAlignment = Alignment.Center
         ) {
             when {
-                isLoading -> {
-                    CircularProgressIndicator()
-                }
-
                 sequences.isEmpty() -> {
                     Text(stringResource(R.string.empty_list))
                 }

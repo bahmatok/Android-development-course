@@ -103,23 +103,6 @@ fun TimerScreen(
                 contentAlignment = Alignment.Center,
                 modifier = Modifier.size(240.dp)
             ) {
-
-                val progress =
-                    if (timerState.currentPhaseTotalSeconds > 0) {
-                        timerState.timeLeftSeconds.toFloat() /
-                                timerState.currentPhaseTotalSeconds.toFloat()
-                    } else {
-                        0f
-                    }
-
-                CircularProgressIndicator(
-                    progress = { progress },
-                    modifier = Modifier.fillMaxSize(),
-                    strokeWidth = 12.dp,
-                    color = MaterialTheme.colorScheme.primary,
-                    trackColor = MaterialTheme.colorScheme.surfaceVariant
-                )
-
                 Text(
                     text = formatTime(timerState.timeLeftSeconds),
                     style = MaterialTheme.typography.displayLarge,

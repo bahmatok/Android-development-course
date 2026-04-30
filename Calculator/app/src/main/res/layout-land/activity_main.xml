@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/modeToggleButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/mode_engineering" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/expressionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:maxLines="1"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:textStyle="bold"
+        android:textSize="28sp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/engineeringFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/basicFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -52,9 +52,6 @@ fun EditScreen(
     }
 
     if (sequence == null) {
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            CircularProgressIndicator()
-        }
         return
     }
 
